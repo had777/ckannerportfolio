@@ -28,6 +28,31 @@ a,
 
 /* DESKTOP NAV */
 
+
+
+/* Default link styles for larger screens (desktop) */
+.nav-links a {
+  color: black; /* Set the color you want for regular links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Add a smooth transition for color changes */
+}
+
+/* Change link color on hover */
+.nav-links a:hover {
+  color: grey; /* Set the color you want on hover */
+}
+
+/* Media query for smaller screens (e.g., mobile phones) */
+@media only screen and (max-width: 480px) {
+  .nav-links a {
+      color: black; /* Adjust link color for smaller screens if needed */
+  }
+
+  /* Change link color on hover for smaller screens */
+  .nav-links a:hover {
+      color: grey; /* Set the color you want on hover for smaller screens */
+  }
+}
 nav,
 .nav-links {
   display: flex;
@@ -148,6 +173,12 @@ a:hover {
 
 /* SECTIONS */
 
+.centered-image {
+  top: 65%;
+ /*  width: 200px; */
+
+}
+
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -174,11 +205,23 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  margin-top: 50px; /* Adjust the top margin */
 }
+
+
+.title1 {
+  /* says charlie kanner */
+  font-size: 3.5em;
+}
+
+
 
 .section__text {
   align-self: center;
   text-align: center;
+  position: absolute;
+  top: 150px;
+  left: 200px;
 }
 
 .section__text p {
@@ -186,25 +229,39 @@ section {
 }
 
 .section__text__p1 {
-  text-align: center;
+  text-align: left;
+  font-size: 1rem; /* says hi i'm */
+  
+
 }
 
+/* says student  */
+.section__text__p2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: rgb(113, 114, 114);
+}
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
-.title {
-  font-size: 3rem;
+.section__text__p2 {
+  text-align: left;
+}
+  
+/**says about me */
+
+.title2 {
+  align-self: center;
+  text-align: center;
+}
+.section__text__p3 {
+  align-self: center;
   text-align: center;
 }
 
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
 
 /* ICONS */
 
@@ -241,12 +298,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: rgb(230, 29, 29);
+  color: rgb(255, 15, 15);
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(182, 21, 21);
 }
 
 .btn-color-2 {
@@ -254,7 +311,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: rgb(141, 28, 28) 0.1rem solid;
 }
 
 .btn-container {
@@ -430,3 +487,274 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+  position: absolute;
+  top: 300px; /* Adjust the vertical position */
+  left: 200px; /* Adjust the horizontal position */
+}
+
+.title {
+  /* Add any additional styling for the title here */
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  /* Add any additional styling for the paragraph here */
+}
+
+
+.teaching-philosophy-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.blogparagraph{
+  margin:10rem;
+}
+
+#blogs {
+  position: relative;
+}
+
+.essay-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40auto;
+  padding: 20px; 
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  flex-basis: calc(33% - 20px);
+  margin: 10px;
+  padding: 2px;
+  box-sizing: border-box; 
+  max-width: 20rem;
+  background: #fbfbfb;
+}
+
+.card img {
+  width: 100%; /* Make image width responsive */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 3px;
+  font-weight: 800;
+}
+
+.card-content {
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  margin-left: 3px;
+}
+
+
+/* CSS styles for diagonal image */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.diagonal-image-container {
+  position: relative;
+  overflow: hidden;
+  width: 33%; /* Adjust as needed */
+  height: 100%;
+  float: right; /* Align to the right */
+  transform: skewY(-10deg);
+  transform-origin: 100% 0;
+}
+
+#homeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  transform: skewY(10deg); /* Counteract skew to make the image appear normal */
+}
+
+.homename-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 67%;
+  padding: 20px;
+  /* Move text down */
+  margin-top: 50px; /* Adjust the value as needed */
+  /* Move text to the right */
+  margin-left: 20px; /* Adjust the value as needed */
+}
+
+.hi-text {
+  font-size: 18px; /* Adjust the size as needed */
+}
+
+.charlie-text {
+  font-size: 28px; /* Adjust the size as needed */
+}
+
+.teacher-text {
+  font-size: 20px; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #3366cc; /* Adjust the color as needed */
+}
+
+.hi-text {
+  font-size: 14px; /* Adjust the size as needed */
+}
+
+.charlie-text {
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.teacher-text {
+  font-size: 18px; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #3366cc; /* Adjust the color as needed */
+}
+
+#tptext {
+  padding: 4em 6rem 4rem 4em;
+  text-align: center;
+}
+
+#tptitle{
+  padding: 3em;
+  text-align: center;
+}
+
+#title-container {
+  background-image: url('undraw_education_f8ru.png');
+  background-repeat: no-repeat;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.flex-item{
+  flex: 1;
+
+}
+
+.flex-item image {
+ max-width: 100%;
+ height: auto;
+}
+
+i.fa-solid, .fas {
+  font-size: 45px;
+  position: relative;
+  right: 35;
+}
+
+#arrow-div {
+  position: relative;
+  left: 50%;
+}
+
+
+/* image grid */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* body {
+  background-color: #282c34;
+  font-family: sans-serif;
+  font-size: 3rem;
+} */
+
+.grid-item2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item2:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
+.d-outline {
+  outline: solid 1px orange;
+}
+
+/* place mobile utility styles */
+@media (max-width:601px){
+  .sm-flex-col {
+    flex-direction: column
+  }
+}
+
+
