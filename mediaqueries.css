@@ -25,7 +25,7 @@
   }
   #profile,
   .section-container {
-    display: block;
+    /* display: block; */
   }
   .arrow {
     display: none;
@@ -133,3 +133,30 @@
 }
 }
 
+
+
+/* place mobile utility styles */
+@media (max-width:601px){
+  .sm-flex-col {
+    flex-direction: column !important;
+  }
+
+  /* position */
+  .sm-relative {
+    position: relative
+  }
+
+  .sm-position-initial{
+    position:initial;
+  }
+
+  .sm-order-1 {
+    order: 1
+  }
+  .sm-order-2 {
+    order: 2
+  }
+  .sm-order-3 {
+    order: 3
+  }
+}
