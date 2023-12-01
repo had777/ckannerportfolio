@@ -130,6 +130,15 @@
       width: 100%; /* Full width for smaller screens */
       margin: 2% 0; /* Add some margin for better spacing */
   }
+
+  .home-order-01 {
+    order: 1
+  }
+
+  .home-order-02 {
+    order: 0;
+    flex: none !important;
+  }
 }
 }
 

@@ -781,5 +781,7 @@ i.fa-solid, .fas {
   position:initial;
 }
 
-
+.home-image-container {
+  max-width: 400px;
+}
 
