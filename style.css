@@ -822,21 +822,34 @@ i.fa-solid, .fas {
 }
 
 
-ß
-
-.photo-container2 {
+.photo-container {
   display: flex;
   justify-content: center;
   gap: 10px; /* Adjust the gap between photos */
   margin-top: 20px; /* Adjust the margin from the text */
 }
 
-.photo-container2 img {
-  width: 350px; /* Set a specific width for the images */
-  height: 400px; /* Set a specific height for the images */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  border: 1px solid black; /* Add a thinner black border around the images */
-  border-radius: 15px; /* Optional: add rounded corners to the images */
+.photo-container img {
+    max-width: 100%; /* Set maximum width to 100% for responsiveness */
+    height: auto;
+    width: 350px; /* Set a specific width or adjust as needed */
+    border-radius: 15px; /* Optional: add rounded corners to the images */
+}
+
+#tptitle {
+  text-align: center;
+}
+
+#tptext {
+    margin: 0 40px; /* Adjust the margin on the sides */
+    margin-bottom: 20px;
+}
+#tptitle {
+  text-align: center; /* Center the text */
+}
+
+#tptext {
+  margin-bottom: 20px; /* Add margin below the text */
 }
 
 * {
