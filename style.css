@@ -255,6 +255,10 @@ section {
   margin-bottom: 1rem;
 }
 
+
+.section_text_p3{
+  font-size: 4rem;
+}
 .section__text__p2 {
   text-align: left;
 }
@@ -325,6 +329,14 @@ section {
 .btn-container {
   gap: 1rem;
 }
+
+
+.btn-primary {
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 170px; 
+}
+
 
 /* ABOUT SECTION */
 
@@ -685,11 +697,16 @@ body, html {
 
 .flex-item{
   flex: 1;
+  border: 1px solid #ddd; /* Subtle border for visual separation */
+  padding: 10px; /* Add padding for space around the content */
+  margin: 10px; /* Add margin for space between flex items */
+  
 
 }
 
-.flex-item image {
- max-width: 100%;
+/*change size of assessments image here*/
+.flex-item img {
+ max-width: 99%;
  height: auto;
 }
 
@@ -785,3 +802,75 @@ i.fa-solid, .fas {
   max-width: 400px;
 }
 
+.normal-weight {
+  font-weight: lighter;
+}
+
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between photos */
+  margin-top: 20px; /* Adjust the margin from the text */
+}
+
+.photo-container img {
+    max-width: 100%; /* Set maximum width to 100% for responsiveness */
+    height: auto;
+    width: 400px; /* Set a specific width or adjust as needed */
+    border-radius: 15px; /* Optional: add rounded corners to the images */
+}
+
+
+ß
+
+.photo-container2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between photos */
+  margin-top: 20px; /* Adjust the margin from the text */
+}
+
+.photo-container2 img {
+  width: 350px; /* Set a specific width for the images */
+  height: 400px; /* Set a specific height for the images */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border: 1px solid black; /* Add a thinner black border around the images */
+  border-radius: 15px; /* Optional: add rounded corners to the images */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff; /* Change the background color as per your preference */
+}
+
+.horizontal-gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the spacing between images */
+}
+
+.horizontal-gallery li {
+  flex: 0 0 auto;
+}
+
+.horizontal-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#tptitle2{
+  padding: 3em;
+  text-align: center;
+}
