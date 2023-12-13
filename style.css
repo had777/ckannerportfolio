@@ -262,8 +262,14 @@ section {
 .section__text__p2 {
   text-align: left;
 }
-  
+
+.about-me-paragraph{
+font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: rgb(113, 114, 114);
 /**says about me */
+}
 
 .title2 {
   align-self: center;
@@ -858,6 +864,12 @@ i.fa-solid, .fas {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -883,7 +895,37 @@ body {
   display: block;
 }
 
+.horizontal-gallery figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.horizontal-gallery figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity as needed */
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: gray;
+}
+
+.horizontal-gallery figure:hover figcaption {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .horizontal-gallery figcaption:hover {
+  /* text-decoration: line-through; */
+
+
 #tptitle2{
   padding: 3em;
   text-align: center;
 }
+

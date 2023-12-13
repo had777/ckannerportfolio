@@ -8,8 +8,41 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
+<style>
+    /* Add this style block for custom styling */
+    body {
+        margin: 0; /* Remove default margin */
+    }
 
+    .photo-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Adjust the gap between photos */
+        margin-top: 20px; /* Adjust the margin from the text */
+    }
 
+    .photo-container figure {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 325px; /* Set a fixed width for uniformity, adjust as needed */
+        height: 375px; /* Set a fixed height for uniformity, adjust as needed */
+    }
+
+    .photo-container figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Maintain aspect ratio while covering the figure */
+    }
+
+    .photo-container figure figcaption {
+        font-size: 11px; /* Adjust the font size as needed */
+        font-family: 'Poppins', sans-serif;
+        margin-top: 8px; /* Adjust the margin as needed */
+        color: gray; /* Set text color to gray */
+        font-style: italic; /* Set font style to italic */
+    }
+</style>
 <body>
     <nav id="desktop-nav">
         <div class="logo">Charlie Kanner</div>
@@ -20,7 +53,7 @@
                 <!-- <li><a href="#experience">Resume</a></li> -->
                 <li><a href="work.html">Work</a></li>
                 <li><a href="assessments.html">Assessments</a></li>
-                <li><a href="#contact">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 
 
             </ul>
@@ -50,11 +83,44 @@
 </html>
     </div>
     <div class="photo-container">
-        <img src="CLASSWORK_photo.jpg" alt="Photo 1">
-        <img src="CLASSWORK_squiggle_write_rubric.jpg" alt="Photo 2">
-        <img src="PHOTO_CLASSWORK_squiggle_write_.jpg" alt="Photo 3">
-        <img src="STUDENT_CLASSWORK_squiggle_write_2.jpg" alt="Photo 4">
+        <figure>
+            <img src="CLASSWORK_photo.jpg" alt="Photo 1">
+            <figcaption>This was one of my students' earlier math tests. From their work, I discussed pie corrections with them, and they were able to fix their mistakes and get a better score. This is for the math test on the left in classwork.</figcaption>
+        </figure>
+<br>
+    </br>
+
+    <br>
+    </br>
+
+
+        <figure>
+            <img src="CLASSWORK_squiggle_write_rubric.jpg" alt="Photo 2">
+            <figcaption>This is 1/2 of the initial squiggle write and rubric for one of my students.  </figcaption>
+        </figure>
+        
+        <br>
+    </br>
+
+        <figure>
+            <img src="PHOTO_CLASSWORK_squiggle_write_.jpg" alt="Photo 3">
+            <figcaption>This is 2/2 of the initial squiggle write and rubric for one of my students. Together we discussed what he was proud of in his squiggle write and what he could improve upon in his next write. The middle two images are Classwork. </figcaption>
+        </figure>
+
+        
+        <br>
+    </br>
+
+        <figure>
+           <img src="STUDENT_CLASSWORK_squiggle_write_2.jpg" alt="Photo 4">
+       <figcaption> This image is the same student’s work. This is his second attempt at a squiggle write. With the feedback to given to him on the first write he was able to improve the quality of his work and his score. Classwork all the way to the right.</figcaption>
+       
+        <br>
+    </br>
+
+
+    </figure>
+
     </div>
-    </div>
-    </body>
-    </html>
+</body>
+</html>
