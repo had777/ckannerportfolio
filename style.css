@@ -95,11 +95,13 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hamburger-icon {
