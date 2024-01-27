@@ -1,171 +1,60 @@
+/* Larger screens (max-width: 1400px) */
 @media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
+  /* Styles for larger screens go here */
 }
 
+/* Medium screens (max-width: 1200px) */
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    /* display: block; */
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
+  /* Styles for medium screens go here */
 }
 
+/* Small screens (max-width: 600px) */
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
-  }
-
-
-
-  /* Default styles for larger screens (desktop) */
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  /* Styles for small screens go here */
 }
 
-.flex-item {
-  width: 23%; /* Adjust the width as needed */
-  margin: 1%;
-  box-sizing: border-box;
-}
-
-/* Media query for tablets (768px) */
+/* Tablets (max-width: 768px) */
 @media only screen and (max-width: 768px) {
-  .flex-item {
-      width: 48%; /* Adjust the width for tablets */
-  }
+  /* Styles for tablets go here */
 }
 
-/* Media query for smaller screens (e.g., mobile phones) */
-@media only screen and (max-width: 480px) {
-  .flex-item {
-      width: 100%; /* Full width for smaller screens */
-      margin: 2% 0; /* Add some margin for better spacing */
-  }
-
-  .home-order-01 {
-    order: 1
-  }
-
-  .home-order-02 {
-    order: 0;
-    flex: none !important;
-  }
-}
+/* Mobile utility styles (max-width: 601px) */
+@media (max-width: 601px) {
+  /* Mobile utility styles go here */
 }
 
 
-
-/* place mobile utility styles */
-@media (max-width:601px){
-  .sm-flex-col {
-    flex-direction: column !important;
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  /* Example styles, adjust according to your design */
+  body {
+      font-size: 14px;
   }
 
-  /* position */
-  .sm-relative {
-    position: relative
+  #desktop-nav {
+      display: none; /* Hide desktop navigation on small screens */
   }
 
-  .sm-position-initial{
-    position:initial;
+  #hamburger-nav {
+      display: block; /* Show hamburger navigation on small screens */
   }
 
-  .sm-order-1 {
-    order: 1
+  .nav-links {
+      flex-direction: column; /* Stack navigation links vertically */
   }
-  .sm-order-2 {
-    order: 2
+
+  .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
   }
-  .sm-order-3 {
-    order: 3
+
+  .card {
+      /* Adjust card styles for better mobile display */
+      width: 100%;
+      margin-bottom: 20px;
   }
+
+  /* Add other responsive styles as needed */
 }
