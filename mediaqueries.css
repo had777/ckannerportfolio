@@ -11,7 +11,6 @@
     height: fit-content;
   }
 }
-
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -46,7 +45,6 @@
     margin-top: 0;
   }
 }
-
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -100,9 +98,6 @@
   .text-container {
     text-align: justify;
   }
-
-
-
   /* Default styles for larger screens (desktop) */
 .flex-container {
   display: flex;
@@ -110,20 +105,17 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
 .flex-item {
   width: 23%; /* Adjust the width as needed */
   margin: 1%;
   box-sizing: border-box;
 }
-
 /* Media query for tablets (768px) */
 @media only screen and (max-width: 768px) {
   .flex-item {
       width: 48%; /* Adjust the width for tablets */
   }
 }
-
 /* Media query for smaller screens (e.g., mobile phones) */
 @media only screen and (max-width: 480px) {
   .flex-item {
@@ -142,23 +134,18 @@
 }
 }
 
-
-
 /* place mobile utility styles */
 @media (max-width:601px){
   .sm-flex-col {
     flex-direction: column !important;
   }
-
   /* position */
   .sm-relative {
     position: relative
   }
-
   .sm-position-initial{
     position:initial;
   }
-
   .sm-order-1 {
     order: 1
   }
