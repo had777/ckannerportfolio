@@ -1,21 +1,176 @@
-/* Base styles for all screens */
 
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
-  /* Adjustments for smaller screens */
-  body {
-    font-size: 14px; /* Example font size adjustment */
+
+Media query old 
+
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    /* display: block; */
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
   }
 
-  /* Add more styles for mobile view as needed */
+
+
+  /* Default styles for larger screens (desktop) */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Tablet styles */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  /* Adjustments for tablets */
+.flex-item {
+  width: 23%; /* Adjust the width as needed */
+  margin: 1%;
+  box-sizing: border-box;
 }
 
-/* Desktop styles */
-@media only screen and (min-width: 769px) {
-  /* Default styles for larger screens */
+/* Media query for tablets (768px) */
+@media only screen and (max-width: 768px) {
+  .flex-item {
+      width: 48%; /* Adjust the width for tablets */
+  }
+}
+
+/* Media query for smaller screens (e.g., mobile phones) */
+@media only screen and (max-width: 480px) {
+  .flex-item {
+      width: 100%; /* Full width for smaller screens */
+      margin: 2% 0; /* Add some margin for better spacing */
+  }
+
+  .home-order-01 {
+    order: 1
+  }
+
+  .home-order-02 {
+    order: 0;
+    flex: none !important;
+  }
+}
+}
+
+
+
+/* place mobile utility styles */
+@media (max-width:601px){
+  .sm-flex-col {
+    flex-direction: column !important;
+  }
+
+  /* position */
+  .sm-relative {
+    position: relative
+  }
+
+  .sm-position-initial{
+    position:initial;
+  }
+
+  .sm-order-1 {
+    order: 1
+  }
+  .sm-order-2 {
+    order: 2
+  }
+  .sm-order-3 {
+    order: 3
+  }
 }
