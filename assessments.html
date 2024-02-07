@@ -1,142 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css" />
-   <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<style>
-   /* Add this style block for custom styling */
-   body {
-       margin: 0; /* Remove default margin */
-   }
 
-
-   .photo-container {
-       display: flex;
-       justify-content: center;
-       gap: 20px; /* Adjust the gap between photos */
-       margin-top: 20px; /* Adjust the margin from the text */
-   }
-
-
-   .photo-container figure {
-       text-align: center;
-       margin: 0;
-       padding: 0;
-       width: 325px; /* Set a fixed width for uniformity, adjust as needed */
-       height: 375px; /* Set a fixed height for uniformity, adjust as needed */
-   }
-
-
-   .photo-container figure img {
-       width: 100%;
-       height: 100%;
-       object-fit: cover; /* Maintain aspect ratio while covering the figure */
-   }
-
-
-   .photo-container figure figcaption {
-       font-size: 11px; /* Adjust the font size as needed */
-       font-family: 'Poppins', sans-serif;
-       margin-top: 8px; /* Adjust the margin as needed */
-       color: gray; /* Set text color to gray */
-       font-style: italic; /* Set font style to italic */
-   }
-</style>
 <body>
-   <nav id="desktop-nav">
-       <div class="logo">Charlie Kanner</div>
-       <div>
-           <ul class="nav-links">
-               <li><a href="index.html">Home</a></li>
-               <!-- <li><a href="#about">About</a></li> -->
-               <!-- <li><a href="#experience">Resume</a></li> -->
-               <li><a href="work.html">Work</a></li>
-               <li><a href="assessments.html">Assessments</a></li>
-               <li><a href="gallery.html">Gallery</a></li>
-              
+    <nav id="desktop-nav">
+        <div class="logo">Charlie Kanner</div>
+        <div>
+    
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <!-- <li><a href="#experience">Resume</a></li> -->
+                <li><a href="work.html">Work</a></li>
+                <li><a href="assessments.html">Assessments</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Charlie Kanner</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html"onclick="toggleMenu()">Home</a></li>
+                <li><a href="work.html"onclick="toggleMenu()">Work</a></li>
+                <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+                <li><a href="assessments.html"onclick="toggleMenu()">Assessments</a></li>
+                <li><a href="gallery.html"onclick="toggleMenu()">Gallery</a></li>
+               
+                
+  
+  
+            </div>
+        </div>
+    </nav>
 
 
-           </ul>
-       </div>
-   </nav>
-<body>
-   <!-- <h1 id = "tptitle"> Student Classwork</h1> -->
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3><span class="normal-weight">Squiggle Write Rubric</span></h3>
+            <a href="./assets/ASSESSMENTSquiggleWriteRubric.pdf" target="_blank">
+                <div class="pdf-screenshot">
+                    <img src="assets/screenshot1.jpg".jpg alt="Squiggle Write Rubric" class="full-width-image">
+                </div>
+            </a>
+        </div>
 
 
-   <!-- <div id="tptext">
-      
- <p>Every school morning, I welcome my students at the door, holding their attendance slips. Their vibrant energy fills the room as they share snippets from the previous day or inquire about gym class or if they can assist with the word of the day. While they eat breakfast and place their homework in the tray, we collectively note any new idioms encountered in our readings and introduce our new word or phrase for the day. From Monday to Thursday, I share Spanish phrases, and on Fridays, one or two students share a word or phrase in any language with me and their peers. This serves as a means to integrate elements of my students' lives and my own into our classroom.</p>
-   <br>
-   </br>
- <p>Within the school’s curriculum, there's limited room to incorporate my or my students' identities and interests into our learning. Often, the readings from our workbook are met with groans, as my students do not feel represented in these texts. By sharing words and languages that hold significance for my students, my cooperating teacher and I strive to become more culturally responsive while fulfilling our obligations.</p>
- <br>
-</br>
- <p>Regarding my decision to teach my students Spanish, I am not Latina, but I grew up speaking Spanish every day with my godmother (who is from Guatemala) and my mother (who learned Spanish in high school and college). Three of my students speak Spanish at home and assist me in teaching their classmates in the mornings. This allows me to share a part of myself with my students and enables them to communicate with peers who speak Spanish as their first language within the building.</p>
- <br>
-</br>
- <p>On Fridays, my students help to teach a word in a language they are familiar with. They take on the role of teaching their classmates while I provide support. This is a way for students to share their own knowledge. They present the phrase, we repeat it as a class, and they explain its usage and why they chose that particular word or phrase to share with us. Several of my students have family in Jamaica or have immigrated from Jamaica and speak Patois at home. Often my students chose to teach patois phrases to our class.</p>
- <br>
-</br>
- <p>Throughout the school day, my students and especially myself often forget to continue using the phrases or words we learned in the morning. Due to our demanding schedule, there are also days when we are unable to cover the word or phrase of the day. Having a running list posted in the classroom might help remind us to use the phrases we learn. I hope to continue this practice in my own classroom. Making space for multiple cultures and languages in the classroom is essential to creating a community where students feel comfortable and welcome.</p>
- <br>
-</br>
-</body>
+
+
+        <div class="flex-item">
+            <h3><span class="normal-weight">Geography Quiz</span></h3>
+            <a href="./assets/ASSESSMENTCopyofGeographyQuiz1PartsofMap.pdf" target="_blank">
+            <img src="assets/screenshot222.jpg"> 
+        </div>
+
+        <div class="flex-item">
+            <h3><span class="normal-weight">Animal Senses Quiz</span></h3>
+            <a href="./assets/ASSESSMENTAnimalsensessightquiz.pdf" target="_blank">
+            <img src="assets/screenshot3333.jpg"> 
+        </div>
+
+        <div class="flex-item">
+            <h3><span class="normal-weight">Exit Tickets</span></h3>
+            <a href="./assets/ASSESSMENTSExittickets.pdf" target="_blank">
+            <img src="assets/Assessmentsscreenshot4.jpg"> 
+        </div>
+
+        <div class="flex-item">
+            <h3><span class="normal-weight">Daily Homework</span></h3>
+            <a href="./assets/ASSESSMENTeverydayhomeowrk.pdf" target="_blank">
+            <img src="assets/Assessmentsscreenshot5.jpg"> 
+        </div>
+
+<!-- 
+    </div>
+    <div id="arrow-div">
+        <i id="arrow" class="fa-solid fa-arrow-right"></i>
+    </div> -->
+
+
+    <p></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
-   </div> -->
-   <div class="photo-container">
-       <figure>
-           <img src="CLASSWORK_photo.jpg" alt="Photo 1">
-           <figcaption>This was one of my students' earlier math tests. From their work, I discussed pie corrections with them, and they were able to fix their mistakes and get a better score. This is for the math test on the left in classwork.</figcaption>
-       </figure>
-<br>
-   </br>
-
-
-   <br>
-   </br>
+  
+    
 
 
 
 
-       <figure>
-           <img src="CLASSWORK_squiggle_write_rubric.jpg" alt="Photo 2">
-           <figcaption>This is 1/2 of the initial squiggle write and rubric for one of my students.  </figcaption>
-       </figure>
-      
-       <br>
-   </br>
 
 
-       <figure>
-           <img src="PHOTO_CLASSWORK_squiggle_write_.jpg" alt="Photo 3">
-           <figcaption>This is 2/2 of the initial squiggle write and rubric for one of my students. Together we discussed what he was proud of in his squiggle write and what he could improve upon in his next write. The middle two images are Classwork. </figcaption>
-       </figure>
-
-
-      
-       <br>
-   </br>
-
-
-       <figure>
-          <img src="STUDENT_CLASSWORK_squiggle_write_2.jpg" alt="Photo 4">
-      <figcaption> This image is the same student’s work. This is his second attempt at a squiggle write. With the feedback to given to him on the first write he was able to improve the quality of his work and his score. Classwork all the way to the right.</figcaption>
-     
-       <br>
-   </br>
-
-
-
-
-   </figure>
-
-
-   </div>
-</body>
-</html>
+    
